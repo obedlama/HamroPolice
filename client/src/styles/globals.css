@@ -106,7 +106,7 @@ form input{
 }
 .request--box a,
 button[type="submit"]{
-  background: color t #000;;
+  background: #000;
   padding: 14px 25px;
   color:#fff;
   border-radius: 8px;
