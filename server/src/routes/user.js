@@ -1,11 +1,7 @@
-const express = require('express')
+const express=require('express')
+const router=express.Router()
+const UsersController = require('../controller/users')
+// router.get('/phone-available/:phoneNumber',UsersController.checkIfUserExists )
+router.post('/register', UsersController.registerUser )
 
-const router = express.Router()
-
-const userController = require('../controller/users')
-
-router.post('/register', userController.registerUser)
- 
-router.get('/checkUserExists/:phoneNumber', userController.checkIfUserExists) 
-
-module.exports = router
+module.exports=router;
