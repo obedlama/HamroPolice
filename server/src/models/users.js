@@ -1,13 +1,20 @@
 const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
-const userSchema = new mongoose.Schema({
-    fullName: {type:String, required: true}, // String is shorthand for {type: String}
-    phoneNumber: {type:String, required: true},
-    email: String,
+const userSchema = new Schema({
+    fullName: String, // String is shorthand for {type: String}
+    address: String,
     password: String,
-    mode: {type: String, default: 'User'},
-    vehicleDetails: Object
-  });
-  
-  const Users = mongoose.model('Users', userSchema);
-  module.exports = Users
+    email: String,
+    phoneNumber: Number,
+    image: String,
+    dob: String, 
+    role: String,
+    gender: String,
+    mode: {type: String, default:'User'}
+   });
+    
+   const Users = mongoose.model('User', userSchema);
+
+   module.exports = Users;
+   
