@@ -12,7 +12,7 @@ import { persistReducer, persistStore } from 'redux-persist';
 
         const reducer = combineReducers({
        users,
-        //..
+        
         })
 
 
@@ -24,4 +24,3 @@ import { persistReducer, persistStore } from 'redux-persist';
 
         export const persistor = persistStore(store)
 
-// export default store;
