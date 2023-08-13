@@ -1,23 +1,30 @@
 import React from 'react'
-import Home from './home'
-import Login  from './login'
+import Heroimg from '../../public/assets/mirchaiya.png'
+import Footer from '../components/Footer'
+import { useSelector } from 'react-redux'
+export default function index() {
 
-const UnAuthenticatedPages = ()=> {
-  return <Login/>
-}
-
-const AuthenticatedPages = ()=> {
- return (
-  <Home/>
- )
-}
-
-const index =()=> {
+  const {isLoggedIn, userDetails} = useSelector(state=>state.users)
   return (
-    <div>
-      <AuthenticatedPages/>
-    </div>
+    <>
+        <section className='hero' style={{backgroundImage: `url(${Heroimg.src})`}}>
+        
+            <div className='request--box'> 
+              <p></p>
+              {isLoggedIn ? (
+                <div className='btn'>
+                  
+                  <a href='/dashboard' >Get Started</a>
+                </div>
+              ) : (
+                <div className='btn'>
+                  
+                <a href='/login' >Get Started</a>
+              </div>
+              )}
+            </div>
+          
+        </section>
+     </>
   )
-}
-
-export default index
+client/src/styles/globals.css}

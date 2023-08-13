@@ -9,12 +9,13 @@ body{
 
 /* HEADER CSS STARTS */
 header{
-  background-color: #000;
+  background-color: #ffffff;
   padding: 10px 0;
   color:#fff;
   /* position: fixed; */
   top: 0;
   width: 100%
+  
 }
 nav{
   display: flex;
@@ -25,8 +26,9 @@ nav{
     flex: 1 1 auto;
 }
 .logo img{
-  max-width: 250px;
+  max-width: 150px;
   height: 100px;
+  margin-left: 1px;
 }
 ul.nav-menus{
   display: flex;
@@ -64,27 +66,48 @@ ul.nav-menus li a:hover{
 /*  */
 /* BANNER CSS STARTS */
 .hero{
-  background-size: cover;
+  background-size:     cover;                   
+    background-repeat:   no-repeat;
+    background-position: center center;  
   width: 100%;
   height: 100vh;
 }
 .request--box{
-  background-color: transparent;
-    padding: 20px 40px;
-    color: #000;
+ 
+  border-radius: 15px;
+  padding: 20px 40px;
+    background-size: auto;
+    color: #000000;
     position: absolute;
-    top: 30%;
+    top: 10%;
     bottom: auto;
-    left: 12%;
+    right: 5%;
 }
+
 .request--box h2{
   font-size: 3rem;
   font-weight: 500;
 }
-.request--box .btn{
-  margin-bottom: 10px;
-  display: flex;
 
+.request--box .btn{
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+.request--box .btn:hover{
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
 }
 
 form input{
@@ -106,20 +129,17 @@ form input{
 }
 .request--box a,
 button[type="submit"]{
-  background: #000;
+  background-color: #000;
   padding: 14px 25px;
   color:#fff;
-  border-radius: 8px;
+  border-radius: 15px;
   border: none;
   font-size: 1rem;
   text-decoration: none;
   margin-top: 20px;
   cursor: pointer;
 }
-.request--box a:hover,
-button[type="submit"]:hover{
-  opacity: 0.5;
-}
+
 /* BANNER CSS ENDS */
 /*  */
 
@@ -129,5 +149,5 @@ button[type="submit"]:hover{
   margin:0 auto;
 }
 .app--login input + div{
-  color:#000;
+  color:red;
 }

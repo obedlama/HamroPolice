@@ -7,7 +7,7 @@ export default function Footer() {
     }
   return (
    <footer style={{backgroundColor:"#000"}}>
-    <p style={footStyle}>© 2023 Hamro Police Technologies Inc.</p>
+    <p style={footStyle}>© 2023 </p>
    </footer>
 
   )
