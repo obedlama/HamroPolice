@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Logo from '../../public/hamroChurchLogo.png'
+import Logo from '../../public/police.png'
 import { Avatar, Space, Button, Popover } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
